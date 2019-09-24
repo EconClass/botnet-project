@@ -8,8 +8,8 @@ The BYOB frameworks comes with many modules that can exploit various attack vect
 
 |  Module  |   Description   |
 |----------|-----------------|
-| [ Name ] | [ Description ] |
-| [ Name ] | [ Description ] |
+| Miner | Can turn a victim's computer into a cryptocurrency miner |
+| Port Scanner | Scans the local network for other online devices & open ports |
 
 By focusing on the selected modules we are able to dive a little deeper into the exploit rather than a broad overview of all of the vectors available through the framework.
 

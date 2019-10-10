@@ -1,0 +1,26 @@
+# -*- mode: python -*-
+block_cipher = pyi_crypto.PyiBlockCipher(key='QJT8IprzokE0i9on')
+a = Analysis(['freeglasses.py'],
+             pathex=['/Users/ryannguyen/Desktop/Make School Code/Year Two/First Term/BEW 2.3/botnet-project/byob'],
+             binaries=[],
+             datas=[],
+             hiddenimports=['zlib', 'base64', 'urllib', 'sys', 'json', 'marshal', 'functools', 'random', 'subprocess', 'uuid', 'errno', 'base64', 'json', 'collections', 'numpy', 'ftplib', 'zipfile', 'sys', 'ctypes', 'copy', 'struct', 'hashlib', 'logging', 'socket', 'StringIO', 'zlib', 'threading', 'time', 'colorama', 'requests', 'os'],
+             hookspath=[],
+             runtime_hooks=[],
+             excludes=['site'],
+             win_no_prefer_redirects=False,
+             win_private_assemblies=False,
+             cipher=block_cipher)
+pyz = PYZ(a.pure, a.zipped_data,
+             cipher=block_cipher)
+exe = EXE(pyz,
+          a.scripts,
+          a.binaries,
+          a.zipfiles,
+          a.datas,
+          name='freeglasses',
+          debug=False,
+          strip=False,
+          upx=False,
+          runtime_tmpdir=None,
+          console=False, icon=None)
